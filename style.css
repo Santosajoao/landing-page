@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+:root{
+    --cor-bg: rgb(34, 34, 34);
+    --violeta:rgb(132, 14, 201);
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color:var(--cor-bg);
+    color: white;
+    font-family: poppinsregular;
+    margin: auto;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 0.4px solid var(--violeta);
+    padding: 15px;
+}
+
+#title{
+    font-family: poppinslight;
+    line-height: 30px;
+}
+
+nav a {
+    font-family: poppinsregular;
+    margin: 20px;
+    color: white;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav a:hover{
+    color: blueviolet;
+    padding: 4px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+#borda{
+    border: 0.4px solid var(--violeta);
+    border-radius: 12px;
+    padding: 12px;
+}
+#borda:hover{
+    color: white;
+    background-color: var(--violeta);
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-left: 40px;
+    margin-top: 47px;
+}
+
+
+h2{
+    font-size: 56px;
+    line-height: 60px;
+    font-family: poppinsmedium;
+}
+
+aside{
+    margin-left: 20px;
+}
+
+span{
+    color: var(--violeta);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+    margin:10px 0px;
+}
+
+
+img{
+    display: inline-block;
+    margin-left: 130px;
+    width:80%
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+#btn-enviar{
+    height: 50px;
+    width: 50%;
+    background-color: var(--violeta);
+    color: white;
+    font-weight: bold;
+}
+
+#btn-enviar:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+}
+
+footer{
+    font-family: poppinslight;
+    display: flex;
+    justify-content: center;
+    background-color: var(--violeta);
+    padding: 5px;
+}
+
+footer p{
+    margin: 0;
+}
+
+
+
+
+
+@media screen and (max-width:800px){
+
+    header{
+        flex-direction: column;
+
+    }
+
+    #title{
+        margin-bottom: 15px;
+    }
+
+    nav a{
+        flex-direction: row;
+        margin: 5px;
+    }
+
+    #borda{
+        margin: -10px;
+        border: none;
+    }
+
+    #borda:hover{
+        color:rgb(132, 14, 201);
+        padding: 0px;
+        background-color:  rgb(34, 34, 34);;
+    }
+
+    
+
+    main{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    input{
+
+        margin: 10px auto;
+    }
+
+    form{
+        margin: auto;
+    }
+
+    img{
+        display: none;
+    }
+}
