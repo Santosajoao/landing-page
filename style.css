@@ -60,7 +60,7 @@ main{
     display: flex;
     flex-direction: row;
     margin-left: 40px;
-    margin-top: 47px;
+    margin-top: 40px;
 }
 
 
@@ -125,7 +125,7 @@ footer{
     justify-content: center;
     background-color: var(--violeta);
     padding: 5px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 footer p{
